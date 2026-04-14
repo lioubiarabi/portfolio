@@ -21,3 +21,8 @@ header {
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
+/* Mobile fixes */
+@media (max-width: 768px) {
+    header { padding: 2rem 1rem; }
+    .project { margin-bottom: 2rem; }
+}
