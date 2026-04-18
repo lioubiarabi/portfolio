@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/hero.css" />
 </head>
 <body>
 
@@ -38,19 +39,30 @@
 
     <!-- HERO -->
     <section id="hero">
-      <div class="hero-content">
-        <p class="hero-greeting">Hi, I'm</p>
-        <h1 class="hero-name">Loubi Arabi<span class="cursor">_</span></h1>
-        <h2 class="hero-role">Full Stack Developer</h2>
-        <p class="hero-desc">
-          I build fast, clean, and scalable web applications — from Laravel REST APIs to
-          interactive front-ends and solid database architectures.
-        </p>
-        <div class="hero-cta">
-          <a href="#projects" class="btn btn-primary">View My Work</a>
-          <a href="#contact" class="btn btn-outline">Get in Touch</a>
+      <div class="hero-inner">
+        <div class="hero-left">
+          <p class="hero-greeting">Hi, my name is</p>
+          <h1 class="hero-name">Loubi Arabi<span class="cursor">_</span></h1>
+          <h2 class="hero-role">I build full-stack web experiences.</h2>
+          <p class="hero-desc">
+            Full-stack developer focused on clean architecture, polished interfaces, and scalable backend systems using
+            <span class="highlight">Laravel</span>, <span class="highlight">PHP</span>,
+            <span class="highlight">JavaScript</span>, and <span class="highlight">MySQL</span>.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-outline">Get in Touch</a>
+          </div>
+
+          <div class="hero-social" aria-label="Social links">
+            <a href="https://github.com/lioubiarabi" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/loubi" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:arabi@loubi.me" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
         </div>
-        <div class="hero-code-block">
+
+        <div class="hero-right">
           <div class="code-window">
             <div class="code-window-bar">
               <span class="dot dot-red"></span>
@@ -58,16 +70,33 @@
               <span class="dot dot-green"></span>
               <span class="code-window-title">developer.php</span>
             </div>
-            <pre class="code-content"><code><span class="kw">$developer</span> = [
-  <span class="str">'name'</span>     => <span class="str">'Loubi Arabi'</span>,
-  <span class="str">'role'</span>     => <span class="str">'Full Stack Developer'</span>,
-  <span class="str">'stack'</span>    => [<span class="str">'Laravel'</span>, <span class="str">'PHP'</span>, <span class="str">'JS'</span>],
-  <span class="str">'projects'</span> => <span class="str">'16 featured builds'</span>,
-  <span class="str">'open'</span>     => <span class="kw">true</span>,
-];</code></pre>
+            <pre class="code-content"><code><span class="ln">1</span><span class="kw">$developer</span> = [
+<span class="ln">2</span>  <span class="str">'name'</span>      =&gt; <span class="str">'Loubi Arabi'</span>,
+<span class="ln">3</span>  <span class="str">'role'</span>      =&gt; <span class="str">'Full Stack Developer'</span>,
+<span class="ln">4</span>  <span class="str">'stack'</span>     =&gt; [<span class="str">'Laravel'</span>, <span class="str">'PHP'</span>, <span class="str">'JavaScript'</span>],
+<span class="ln">5</span>  <span class="str">'focus'</span>     =&gt; <span class="str">'Clean UI + scalable backend'</span>,
+<span class="ln">6</span>  <span class="str">'status'</span>    =&gt; <span class="kw">'open_to_work'</span>,
+<span class="ln">7</span>];
+<span class="ln">8</span><span class="fn">build</span>(<span class="str">'something meaningful'</span>)<span class="type-cursor"></span></code></pre>
+          </div>
+
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <span class="hero-stat-num">16</span>
+              <span class="hero-stat-label">Projects</span>
+            </div>
+            <div class="hero-stat">
+              <span class="hero-stat-num">24+</span>
+              <span class="hero-stat-label">Certificates</span>
+            </div>
+            <div class="hero-stat">
+              <span class="hero-stat-num">5+</span>
+              <span class="hero-stat-label">Team Builds</span>
+            </div>
           </div>
         </div>
       </div>
+
       <div class="hero-scroll-hint">
         <span>scroll</span>
         <div class="scroll-line"></div>
@@ -197,7 +226,6 @@
 
       <div class="projects-grid reveal-group" id="projects-grid">
 
-        <!-- EasyColoc -->
         <article class="project-card reveal" data-tags="laravel php">
           <div class="project-card-header">
             <div class="project-icon"><i class="fas fa-home"></i></div>
@@ -212,7 +240,6 @@
           </div>
         </article>
 
-        <!-- BookBus -->
         <article class="project-card reveal" data-tags="laravel php">
           <div class="project-card-header">
             <div class="project-icon"><i class="fas fa-bus"></i></div>
@@ -227,7 +254,6 @@
           </div>
         </article>
 
-        <!-- Loyalty Points -->
         <article class="project-card reveal" data-tags="php">
           <div class="project-card-header">
             <div class="project-icon"><i class="fas fa-gift"></i></div>
@@ -242,7 +268,6 @@
           </div>
         </article>
 
-        <!-- PhotoSphere -->
         <article class="project-card reveal" data-tags="php">
           <div class="project-card-header">
             <div class="project-icon"><i class="fas fa-images"></i></div>
@@ -257,7 +282,6 @@
           </div>
         </article>
 
-        <!-- BlogCMS PHP -->
         <article class="project-card reveal" data-tags="php">
           <div class="project-card-header">
             <div class="project-icon"><i class="fas fa-newspaper"></i></div>
@@ -272,7 +296,6 @@
           </div>
         </article>
 
-        <!-- BlogCMS SQL -->
         <article class="project-card reveal" data-tags="php">
           <div class="project-card-header">
             <div class="project-icon"><i class="fas fa-database"></i></div>
@@ -287,7 +310,6 @@
           </div>
         </article>
 
-        <!-- SpaceOdyssey Reservations -->
         <article class="project-card reveal" data-tags="frontend">
           <div class="project-card-header">
             <div class="project-icon"><i class="fas fa-ticket"></i></div>
@@ -302,7 +324,6 @@
           </div>
         </article>
 
-        <!-- SpaceOdyssey -->
         <article class="project-card reveal" data-tags="frontend team">
           <div class="project-card-header">
             <div class="project-icon"><i class="fas fa-globe"></i></div>
@@ -317,7 +338,6 @@
           </div>
         </article>
 
-        <!-- SpaceOdyssey JS -->
         <article class="project-card reveal" data-tags="frontend">
           <div class="project-card-header">
             <div class="project-icon"><i class="fas fa-star"></i></div>
@@ -332,7 +352,6 @@
           </div>
         </article>
 
-        <!-- SpaceX Exploration -->
         <article class="project-card reveal" data-tags="frontend">
           <div class="project-card-header">
             <div class="project-icon"><i class="fas fa-rocket"></i></div>
@@ -347,7 +366,6 @@
           </div>
         </article>
 
-        <!-- GGManager -->
         <article class="project-card reveal" data-tags="laravel api team">
           <div class="project-card-header">
             <div class="project-icon"><i class="fas fa-trophy"></i></div>
@@ -362,7 +380,6 @@
           </div>
         </article>
 
-        <!-- GourmetLibrary API -->
         <article class="project-card reveal" data-tags="laravel api">
           <div class="project-card-header">
             <div class="project-icon"><i class="fas fa-utensils"></i></div>
@@ -377,7 +394,6 @@
           </div>
         </article>
 
-        <!-- BlogCMS Console -->
         <article class="project-card reveal" data-tags="php">
           <div class="project-card-header">
             <div class="project-icon"><i class="fas fa-terminal"></i></div>
@@ -392,7 +408,6 @@
           </div>
         </article>
 
-        <!-- WorkSphere -->
         <article class="project-card reveal" data-tags="frontend">
           <div class="project-card-header">
             <div class="project-icon"><i class="fas fa-building"></i></div>
@@ -408,7 +423,6 @@
           </div>
         </article>
 
-        <!-- CosmicExplore -->
         <article class="project-card reveal" data-tags="frontend team">
           <div class="project-card-header">
             <div class="project-icon"><i class="fas fa-meteor"></i></div>
@@ -424,7 +438,6 @@
           </div>
         </article>
 
-        <!-- TaxiYa -->
         <article class="project-card reveal" data-tags="laravel php team">
           <div class="project-card-header">
             <div class="project-icon"><i class="fas fa-taxi"></i></div>
@@ -687,7 +700,6 @@
   </footer>
 
   <script>
-    // Theme toggle
     const toggle = document.getElementById('theme-toggle');
     const icon   = document.getElementById('theme-icon');
     const html   = document.documentElement;
@@ -697,7 +709,6 @@
       icon.className = isDark ? 'fas fa-moon' : 'fas fa-sun';
     });
 
-    // Hamburger
     const burger = document.getElementById('hamburger');
     const navLinks = document.getElementById('nav-links');
     burger.addEventListener('click', () => {
@@ -709,13 +720,11 @@
       navLinks.classList.remove('open');
     }));
 
-    // Navbar scroll
     const navbar = document.getElementById('navbar');
     window.addEventListener('scroll', () => {
       navbar.classList.toggle('scrolled', window.scrollY > 50);
     });
 
-    // Active nav link
     const sections = document.querySelectorAll('section[id]');
     const navAs = document.querySelectorAll('.nav-links a:not(.btn-nav-resume)');
     const observer = new IntersectionObserver(entries => {
@@ -727,14 +736,12 @@
     }, { threshold: 0.4 });
     sections.forEach(s => observer.observe(s));
 
-    // Scroll reveal
     const reveals = document.querySelectorAll('.reveal');
     const revealObs = new IntersectionObserver(entries => {
       entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObs.unobserve(e.target); } });
     }, { threshold: 0.1 });
     reveals.forEach(r => revealObs.observe(r));
 
-    // Project filter
     document.querySelectorAll('[data-filter]').forEach(btn => {
       btn.addEventListener('click', () => {
         document.querySelectorAll('[data-filter]').forEach(b => b.classList.remove('active'));
@@ -747,7 +754,6 @@
       });
     });
 
-    // Certificate filter
     document.querySelectorAll('[data-cert-filter]').forEach(btn => {
       btn.addEventListener('click', () => {
         document.querySelectorAll('[data-cert-filter]').forEach(b => b.classList.remove('active'));
