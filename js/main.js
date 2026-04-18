@@ -1,193 +1,109 @@
-/* ===========================================
-   LOUBI ARABI — PORTFOLIO JS
-=========================================== */
+const header = document.getElementById('site-header');
+const navLinks = document.getElementById('nav-links');
+const menuToggle = document.getElementById('menu-toggle');
+const themeToggle = document.getElementById('theme-toggle');
 
-/* ---- THEME TOGGLE ---- */
-(function () {
-  const html = document.documentElement;
-  const btn = document.getElementById('theme-toggle');
-  const icon = document.getElementById('theme-icon');
+menuToggle?.addEventListener('click', () => {
+  const isOpen = navLinks?.classList.toggle('open');
+  menuToggle.setAttribute('aria-expanded', String(!!isOpen));
+});
 
-  // Respect system preference, default dark
-  let theme = 'dark';
-  if (window.matchMedia('(prefers-color-scheme: light)').matches) {
-    theme = 'light';
-  }
-  html.setAttribute('data-theme', theme);
-  updateIcon(theme);
-
-  if (btn) {
-    btn.addEventListener('click', () => {
-      theme = theme === 'dark' ? 'light' : 'dark';
-      html.setAttribute('data-theme', theme);
-      updateIcon(theme);
-    });
-  }
-
-  function updateIcon(t) {
-    if (!icon) return;
-    icon.className = t === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
-  }
-})();
-
-/* ---- NAVBAR: scroll class + active section highlight ---- */
-(function () {
-  const navbar = document.getElementById('navbar');
-  const navLinks = document.querySelectorAll('.nav-links a:not(.btn-nav-resume)');
-  const sections = document.querySelectorAll('section[id]');
-
-  // Scrolled class
-  window.addEventListener('scroll', () => {
-    navbar.classList.toggle('scrolled', window.scrollY > 50);
-    highlightNav();
-  }, { passive: true });
-
-  function highlightNav() {
-    let current = '';
-    sections.forEach(section => {
-      const top = section.offsetTop - 120;
-      if (window.scrollY >= top) current = section.getAttribute('id');
-    });
-    navLinks.forEach(a => {
-      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
-    });
-  }
-
-  highlightNav();
-})();
-
-/* ---- HAMBURGER MENU ---- */
-(function () {
-  const hamburger = document.getElementById('hamburger');
-  const navLinks = document.getElementById('nav-links');
-
-  if (!hamburger || !navLinks) return;
-
-  hamburger.addEventListener('click', () => {
-    const open = navLinks.classList.toggle('open');
-    hamburger.classList.toggle('open', open);
-    document.body.style.overflow = open ? 'hidden' : '';
-  });
-
-  // Close on nav link click
-  navLinks.querySelectorAll('a').forEach(a => {
-    a.addEventListener('click', () => {
-      navLinks.classList.remove('open');
-      hamburger.classList.remove('open');
-      document.body.style.overflow = '';
-    });
-  });
-})();
-
-/* ---- SCROLL REVEAL ---- */
-(function () {
-  const elements = document.querySelectorAll(
-    '.section-header, .about-grid, .skill-group, .project-card, .cert-card, .contact-container, .stat-card'
-  );
-
-  elements.forEach(el => el.classList.add('reveal'));
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    },
-    { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
-  );
-
-  elements.forEach(el => observer.observe(el));
-})();
-
-/* ---- PROJECT FILTERS ---- */
-(function () {
-  const filterBtns = document.querySelectorAll('[data-filter]');
-  const cards = document.querySelectorAll('#projects-grid .project-card');
-
-  filterBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const filter = btn.dataset.filter;
-
-      // Update active button
-      filterBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-
-      // Show/hide cards
-      cards.forEach(card => {
-        const tags = card.dataset.tags || '';
-        const show = filter === 'all' || tags.includes(filter);
-        card.classList.toggle('hidden', !show);
-        // Re-trigger reveal animation
-        if (show) {
-          card.classList.remove('visible');
-          setTimeout(() => card.classList.add('visible'), 20);
-        }
-      });
-    });
-  });
-})();
-
-/* ---- CERTIFICATE FILTERS ---- */
-(function () {
-  const filterBtns = document.querySelectorAll('[data-cert-filter]');
-  const cards = document.querySelectorAll('#certs-grid .cert-card');
-
-  filterBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const filter = btn.dataset.certFilter;
-
-      filterBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-
-      cards.forEach(card => {
-        const issuer = card.dataset.certIssuer || '';
-        const show = filter === 'all' || issuer === filter;
-        card.classList.toggle('hidden', !show);
-        if (show) {
-          card.classList.remove('visible');
-          setTimeout(() => card.classList.add('visible'), 20);
-        }
-      });
-    });
-  });
-})();
-
-/* ---- CURSOR BLINK (hero) already in CSS ---- */
-
-/* ---- STATS COUNTER ANIMATION ---- */
-(function () {
-  const stats = document.querySelectorAll('.stat-num');
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (!entry.isIntersecting) return;
-      const el = entry.target;
-      const target = parseInt(el.textContent.replace('+', ''), 10);
-      const hasPlusSign = el.textContent.includes('+');
-      let current = 0;
-      const step = Math.ceil(target / 30);
-      const interval = setInterval(() => {
-        current = Math.min(current + step, target);
-        el.textContent = current + (hasPlusSign ? '+' : '');
-        if (current >= target) clearInterval(interval);
-      }, 40);
-      observer.unobserve(el);
-    });
-  }, { threshold: 0.5 });
-
-  stats.forEach(el => observer.observe(el));
-})();
-
-/* ---- SMOOTH SCROLL for all anchor links ---- */
-document.querySelectorAll('a[href^="#"]').forEach(a => {
-  a.addEventListener('click', e => {
-    const target = document.querySelector(a.getAttribute('href'));
-    if (target) {
-      e.preventDefault();
-      target.scrollIntoView({ behavior: 'smooth' });
-    }
+document.querySelectorAll('.nav-links a').forEach((link) => {
+  link.addEventListener('click', () => {
+    navLinks?.classList.remove('open');
+    menuToggle?.setAttribute('aria-expanded', 'false');
   });
 });
+
+window.addEventListener('scroll', () => {
+  header?.classList.toggle('scrolled', window.scrollY > 24);
+});
+
+themeToggle?.addEventListener('click', () => {
+  const current = document.documentElement.getAttribute('data-theme');
+  const next = current === 'light' ? 'dark' : 'light';
+  document.documentElement.setAttribute('data-theme', next);
+  themeToggle.innerHTML = next === 'light'
+    ? '<i class="fa-solid fa-sun"></i>'
+    : '<i class="fa-solid fa-moon"></i>';
+});
+
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener('click', (event) => {
+    const target = document.querySelector(anchor.getAttribute('href'));
+    if (!target) return;
+    event.preventDefault();
+    target.scrollIntoView({ behavior: 'smooth' });
+  });
+});
+
+const sections = document.querySelectorAll('main section[id]');
+const navAnchors = document.querySelectorAll('.nav-links a');
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach((section) => {
+    if (window.scrollY >= section.offsetTop - 120) current = section.id;
+  });
+  navAnchors.forEach((anchor) => {
+    anchor.classList.toggle('active', anchor.getAttribute('href') === `#${current}`);
+  });
+});
+
+const revealItems = document.querySelectorAll('.info-card, .project-card, .cert-card');
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) return;
+    entry.target.classList.add('visible');
+    revealObserver.unobserve(entry.target);
+  });
+}, { threshold: 0.12 });
+
+revealItems.forEach((item, index) => {
+  item.style.opacity = 0;
+  item.style.transform = 'translateY(14px)';
+  item.style.transition = `opacity .45s ease ${index * 0.018}s, transform .45s ease ${index * 0.018}s`;
+  revealObserver.observe(item);
+});
+
+function bindFilter(buttonSelector, itemsSelector, dataKey) {
+  const buttons = document.querySelectorAll(buttonSelector);
+  const items = document.querySelectorAll(itemsSelector);
+
+  buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+      const filter = button.dataset[dataKey];
+      buttons.forEach((btn) => btn.classList.remove('active'));
+      button.classList.add('active');
+
+      items.forEach((item) => {
+        const target = item.dataset[dataKey] || '';
+        const tags = item.dataset.tags || '';
+        const isVisible = filter === 'all' || target === filter || tags.includes(filter);
+        item.classList.toggle('hidden', !isVisible);
+      });
+    });
+  });
+}
+
+bindFilter('.filter-btn[data-filter]', '#projects-grid .project-card', 'filter');
+bindFilter('.filter-btn[data-cert-filter]', '#certs-grid .cert-card', 'certFilter');
+
+const counters = document.querySelectorAll('[data-counter]');
+const counterObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) return;
+    const el = entry.target;
+    const end = Number(el.dataset.counter || 0);
+    const showPlus = (el.textContent || '').includes('+');
+    let value = 0;
+    const tick = Math.max(1, Math.ceil(end / 30));
+    const timer = setInterval(() => {
+      value = Math.min(end, value + tick);
+      el.textContent = showPlus ? `${value}+` : String(value);
+      if (value >= end) clearInterval(timer);
+    }, 24);
+    counterObserver.unobserve(el);
+  });
+}, { threshold: 0.5 });
+
+counters.forEach((counter) => counterObserver.observe(counter));
