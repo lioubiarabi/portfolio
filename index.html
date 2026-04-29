@@ -1,221 +1,547 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Loubi Arabi | Full-Stack Developer</title>
-  <meta name="description" content="Professional portfolio of Loubi Arabi, full-stack developer focused on Laravel, PHP, JavaScript, SQL and scalable products." />
-  <meta property="og:title" content="Loubi Arabi | Full-Stack Developer" />
-  <meta property="og:description" content="Professional and modern developer portfolio with projects and certificates." />
-  <meta property="og:type" content="website" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-  <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loubi Arabi | Full-Stack Developer</title>
+    <meta name="description" content="Professional portfolio of Loubi Arabi, full-stack developer focused on Laravel, PHP, JavaScript, SQL and scalable products." />
+    <meta property="og:title" content="Loubi Arabi | Full-Stack Developer" />
+    <meta property="og:description" content="Professional and modern developer portfolio with projects and certificates." />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <header class="site-header" id="site-header">
+<header class="site-header" id="site-header">
     <nav class="container nav">
-      <a href="#home" class="brand">LA<span>.</span></a>
-      <button id="menu-toggle" class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">
-        <i class="fa-solid fa-bars"></i>
-      </button>
-      <ul class="nav-links" id="nav-links" aria-label="Primary">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#certificates">Certificates</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
-        <i class="fa-solid fa-moon"></i>
-      </button>
+        <a href="#home" class="brand">LA<span>.</span></a>
+        <button id="menu-toggle" class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="nav-links" id="nav-links" aria-label="Primary navigation">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+            <i class="fa-solid fa-moon"></i>
+        </button>
     </nav>
-  </header>
+</header>
 
-  <main>
+<main>
     <section id="home" class="hero">
-      <div class="container hero-grid">
-        <div class="hero-content">
-          <p class="eyebrow">FULL-STACK DEVELOPER</p>
-          <h1>I'm <span>Arabi Loubi</span><br/>Building modern digital products.</h1>
-          <p class="lead">I design and develop robust web applications with Laravel, PHP, JavaScript, and SQL — from backend architecture to polished frontend interfaces.</p>
-          <div class="hero-cta">
-            <a class="btn btn-primary" href="#projects">View Projects</a>
-            <a class="btn btn-ghost" href="#contact">Contact Me</a>
-          </div>
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <p class="eyebrow">FULL-STACK DEVELOPER</p>
+                <h1>I'm <span>Arabi Loubi</span><br/>Building modern digital products.</h1>
+                <p class="lead">I design and develop robust web applications with Laravel, PHP, JavaScript, and SQL — from backend architecture to polished frontend interfaces.</p>
+                <div class="hero-cta">
+                    <a class="btn btn-primary" href="#projects">View Projects</a>
+                    <a class="btn btn-ghost" href="#contact">Contact Me</a>
+                </div>
 
-          <div class="hero-metrics">
-            <div><strong data-counter="20">20+</strong><span>Featured Projects</span></div>
-            <div><strong data-counter="25">25+</strong><span>Certificates</span></div>
-            <div><strong data-counter="5">5</strong><span>Team Collaborations</span></div>
-          </div>
+                <div class="hero-metrics">
+                    <div><strong data-counter="20">20+</strong><span>Featured Projects</span></div>
+                    <div><strong data-counter="25">25+</strong><span>Certificates</span></div>
+                    <div><strong data-counter="5">5</strong><span>Team Collaborations</span></div>
+                </div>
 
-          <ul class="social-links">
-            <li><a href="https://github.com/lioubiarabi" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
-            <li><a href="https://linkedin.com/in/loubi" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
-            <li><a href="mailto:arabi@loubi.me" aria-label="Email"><i class="fa-solid fa-envelope"></i></a></li>
-          </ul>
+                <ul class="social-links">
+                    <li><a href="https://github.com/lioubiarabi" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="https://linkedin.com/in/loubi" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="mailto:arabi@loubi.me" aria-label="Email"><i class="fa-solid fa-envelope"></i></a></li>
+                </ul>
+            </div>
+            <div class="hero-media" aria-hidden="true">
+                <img src="assets/arabi-loubi.png" alt="Portrait of Loubi Arabi" />
+                <div class="hero-chip chip-java">JAVA</div>
+                <div class="hero-chip chip-css">CSS</div>
+                <div class="hero-chip chip-code"><i class="fa-solid fa-code"></i></div>
+            </div>
         </div>
-        <div class="hero-media" aria-hidden="true">
-          <img src="assets/arabi-loubi.png" alt="Portrait of Loubi Arabi" />
-          <div class="hero-chip chip-java">JAVA</div>
-          <div class="hero-chip chip-css">CSS</div>
-          <div class="hero-chip chip-code"><i class="fa-solid fa-code"></i></div>
-        </div>
-      </div>
     </section>
 
     <section id="about" class="section">
-      <div class="container two-col">
-        <div>
-          <p class="section-tag">ABOUT</p>
-          <h2>Professional Profile</h2>
-          <p>I am a full-stack developer focused on delivering scalable, maintainable, and business-oriented solutions. I enjoy translating ideas into reliable products with clean architecture and engaging user experiences.</p>
-          <p>I combine backend rigor with modern frontend craft to deliver high-quality web applications end-to-end.</p>
+        <div class="container two-col">
+            <div>
+                <p class="section-tag">ABOUT</p>
+                <h2>Professional Profile</h2>
+                <p>I am a full-stack developer focused on delivering scalable, maintainable, and business-oriented solutions. I enjoy translating ideas into reliable products with clean architecture and engaging user experiences.</p>
+                <p>I combine backend rigor with modern frontend craft to deliver high-quality web applications end-to-end.</p>
+            </div>
+            <div class="about-cards">
+                <article class="info-card"><h3>Core Stack</h3><p>Laravel, PHP, JavaScript, MySQL, SQL, REST API</p></article>
+                <article class="info-card"><h3>Engineering Focus</h3><p>SOLID design, clean code, testing mindset, and performance.</p></article>
+                <article class="info-card"><h3>Soft Skills</h3><p>Collaboration, communication, ownership, and continuous learning.</p></article>
+            </div>
         </div>
-        <div class="about-cards">
-          <article class="info-card"><h3>Core Stack</h3><p>Laravel, PHP, JavaScript, MySQL, SQL, REST API</p></article>
-          <article class="info-card"><h3>Engineering Focus</h3><p>SOLID design, clean code, testing mindset, and performance.</p></article>
-          <article class="info-card"><h3>Soft Skills</h3><p>Collaboration, communication, ownership, and continuous learning.</p></article>
-        </div>
-      </div>
     </section>
 
-
-
+    <!-- ===== SKILLS — redesigned with full CV sync ===== -->
     <section id="skills" class="section" aria-labelledby="skills-title">
-      <div class="container">
-        <div class="section-head-inline">
-          <div>
-            <p class="section-tag">SKILLS</p>
-            <h2 id="skills-title">Tech Stack & Strengths</h2>
-          </div>
+        <div class="container">
+            <div class="section-head-inline">
+                <div>
+                    <p class="section-tag">SKILLS</p>
+                    <h2 id="skills-title">Tech Stack &amp; Strengths</h2>
+                </div>
+            </div>
+            <div class="skills-grid">
+
+                <article class="skill-card">
+                    <h3><i class="fa-solid fa-laptop-code"></i> Frontend</h3>
+                    <div class="skill-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>TypeScript</span>
+                        <span>React</span>
+                        <span>Tailwind CSS</span>
+                        <span>Bootstrap</span>
+                        <span>Responsive UI</span>
+                    </div>
+                </article>
+
+                <article class="skill-card">
+                    <h3><i class="fa-solid fa-server"></i> Backend</h3>
+                    <div class="skill-tags">
+                        <span>PHP</span>
+                        <span>Laravel</span>
+                        <span>Node.js</span>
+                        <span>Express.js</span>
+                        <span>Python</span>
+                        <span>C</span>
+                        <span>C++</span>
+                        <span>REST APIs</span>
+                        <span>MVC</span>
+                        <span>Authentication</span>
+                    </div>
+                </article>
+
+                <article class="skill-card">
+                    <h3><i class="fa-solid fa-database"></i> Databases</h3>
+                    <div class="skill-tags">
+                        <span>MySQL</span>
+                        <span>PostgreSQL</span>
+                        <span>SQL</span>
+                        <span>Schema Design</span>
+                        <span>Eloquent ORM</span>
+                        <span>Optimization</span>
+                    </div>
+                </article>
+
+                <article class="skill-card">
+                    <h3><i class="fa-solid fa-cloud"></i> Cloud &amp; Infra</h3>
+                    <div class="skill-tags">
+                        <span>Firebase</span>
+                        <span>Google Cloud Platform</span>
+                        <span>Linux</span>
+                        <span>VirtualBox</span>
+                        <span>XAMPP</span>
+                    </div>
+                </article>
+
+                <article class="skill-card">
+                    <h3><i class="fa-solid fa-pen-ruler"></i> Design &amp; Modeling</h3>
+                    <div class="skill-tags">
+                        <span>Figma</span>
+                        <span>UML</span>
+                        <span>Merise</span>
+                        <span>UI/UX Prototyping</span>
+                    </div>
+                </article>
+
+                <article class="skill-card">
+                    <h3><i class="fa-solid fa-toolbox"></i> Tools &amp; Workflow</h3>
+                    <div class="skill-tags">
+                        <span>Git &amp; GitHub</span>
+                        <span>Postman</span>
+                        <span>VS Code</span>
+                        <span>PhpStorm</span>
+                        <span>WebStorm</span>
+                        <span>Trello</span>
+                        <span>Jira</span>
+                        <span>Scrum / Agile</span>
+                        <span>GitHub Projects</span>
+                    </div>
+                </article>
+
+            </div>
         </div>
-        <div class="skills-grid">
-          <article class="skill-card">
-            <h3><i class="fa-solid fa-laptop-code"></i> Frontend</h3>
-            <div class="skill-tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>TypeScript</span><span>Responsive UI</span></div>
-          </article>
-          <article class="skill-card">
-            <h3><i class="fa-solid fa-server"></i> Backend</h3>
-            <div class="skill-tags"><span>PHP</span><span>Laravel</span><span>REST APIs</span><span>MVC</span><span>Authentication</span></div>
-          </article>
-          <article class="skill-card">
-            <h3><i class="fa-solid fa-database"></i> Data</h3>
-            <div class="skill-tags"><span>MySQL</span><span>SQL</span><span>Schema Design</span><span>Optimization</span><span>Eloquent ORM</span></div>
-          </article>
-          <article class="skill-card">
-            <h3><i class="fa-solid fa-toolbox"></i> Tools</h3>
-            <div class="skill-tags"><span>Git & GitHub</span><span>Linux</span><span>Postman</span><span>Agile</span><span>Problem Solving</span></div>
-          </article>
-        </div>
-      </div>
     </section>
+    <!-- ===== END SKILLS ===== -->
 
     <section id="projects" class="section section-alt" aria-labelledby="projects-title">
-      <div class="container">
-        <div class="section-head-inline">
-          <div>
-            <p class="section-tag">PROJECTS</p>
-            <h2 id="projects-title">Selected Work</h2>
-          </div>
-          <div class="project-filters" role="tablist" aria-label="Project filters">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="laravel">Laravel</button>
-            <button class="filter-btn" data-filter="php">PHP</button>
-            <button class="filter-btn" data-filter="frontend">Frontend</button>
-            <button class="filter-btn" data-filter="api">API</button>
-          </div>
-        </div>
+        <div class="container">
+            <div class="section-head-inline">
+                <div>
+                    <p class="section-tag">PROJECTS</p>
+                    <h2 id="projects-title">Selected Work</h2>
+                </div>
+                <div class="project-filters" role="tablist" aria-label="Project filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="laravel">Laravel</button>
+                    <button class="filter-btn" data-filter="php">PHP</button>
+                    <button class="filter-btn" data-filter="frontend">Frontend</button>
+                    <button class="filter-btn" data-filter="api">API</button>
+                </div>
+            </div>
 
-        <div class="projects-grid" id="projects-grid">
-          <article class="project-card" data-tags="laravel php"><h3>EasyColoc</h3><p>Roommate expense management with debt automation and admin features.</p><div class="project-tech"><span>Laravel</span><span>PHP</span><span>MySQL</span></div><a class="project-link" href="https://github.com/lioubiarabi/EasyColoc" target="_blank" rel="noopener">View Repository</a></article>
-          <article class="project-card" data-tags="php"><h3>BookBus</h3><p>Bus booking management system with reservation and operation flow.</p><div class="project-tech"><span>PHP</span><span>MVC</span></div><a class="project-link" href="https://github.com/lioubiarabi/BookBus_Bus_Booking_Management_System" target="_blank" rel="noopener">View Repository</a></article>
-          <article class="project-card" data-tags="php"><h3>Loyalty Points System</h3><p>MVC foundation project for points lifecycle and customer loyalty operations.</p><div class="project-tech"><span>PHP</span><span>MVC</span></div><a class="project-link" href="https://github.com/lioubiarabi/Loyalty_Points_System_MVC_Foundation" target="_blank" rel="noopener">View Repository</a></article>
-          <article class="project-card" data-tags="frontend php"><h3>PhotoSphere</h3><p>Community photo gallery platform with collaborative visual sharing.</p><div class="project-tech"><span>PHP</span><span>Frontend</span></div><a class="project-link" href="https://github.com/lioubiarabi/PHOTOSPHERE_Galerie_Photo_Communautaire" target="_blank" rel="noopener">View Repository</a></article>
-          <article class="project-card" data-tags="php"><h3>BlogCMS PHP</h3><p>Content management system implementation in PHP.</p><div class="project-tech"><span>PHP</span><span>CMS</span></div><a class="project-link" href="https://github.com/lioubiarabi/BlogCMS_php" target="_blank" rel="noopener">View Repository</a></article>
-          <article class="project-card" data-tags="php"><h3>BlogCMS SQL</h3><p>SQL-centered edition of BlogCMS with schema-focused design.</p><div class="project-tech"><span>SQL</span><span>Database</span></div><a class="project-link" href="https://github.com/lioubiarabi/BlogCMS_sql" target="_blank" rel="noopener">View Repository</a></article>
-          <article class="project-card" data-tags="laravel php"><h3>SpaceOdyssey Reservations</h3><p>Reservation management module for the SpaceOdyssey platform.</p><div class="project-tech"><span>Laravel</span><span>PHP</span></div><a class="project-link" href="https://github.com/lioubiarabi/SpaceOdyssey-reservations" target="_blank" rel="noopener">View Repository</a></article>
-          <article class="project-card" data-tags="laravel frontend"><h3>SpaceOdyssey</h3><p>Main platform experience for space-themed exploration services.</p><div class="project-tech"><span>Laravel</span><span>UI</span></div><a class="project-link" href="https://github.com/lioubiarabi/SpaceOdyssey" target="_blank" rel="noopener">View Repository</a></article>
-          <article class="project-card" data-tags="frontend"><h3>SpaceOdyssey JavaScript</h3><p>JavaScript-focused SpaceOdyssey implementation and interactions.</p><div class="project-tech"><span>JavaScript</span><span>Frontend</span></div><a class="project-link" href="https://github.com/lioubiarabi/SpaceOdyssey-javascript" target="_blank" rel="noopener">View Repository</a></article>
-          <article class="project-card" data-tags="frontend api"><h3>SpaceX Exploration</h3><p>Exploration dashboard integrating space-themed data presentation.</p><div class="project-tech"><span>API</span><span>JavaScript</span></div><a class="project-link" href="https://github.com/lioubiarabi/spaceX_exploration" target="_blank" rel="noopener">View Repository</a></article>
-          <article class="project-card" data-tags="laravel php"><h3>GGManager</h3><p>Management platform for organized workflows and project tracking.</p><div class="project-tech"><span>Laravel</span><span>PHP</span></div><a class="project-link" href="https://github.com/lioubiarabi/GGManager" target="_blank" rel="noopener">View Repository</a></article>
-          <article class="project-card" data-tags="api laravel"><h3>GourmetLibrary API</h3><p>Backend API for culinary/library content services and integrations.</p><div class="project-tech"><span>API</span><span>Laravel</span></div><a class="project-link" href="https://github.com/lioubiarabi/GourmetLibrary_API" target="_blank" rel="noopener">View Repository</a></article>
-          <article class="project-card" data-tags="php"><h3>BlogCMS Console Edition</h3><p>Console-based content management workflow implementation.</p><div class="project-tech"><span>PHP</span><span>Console</span></div><a class="project-link" href="https://github.com/lioubiarabi/BlogCMS_Console_Edition" target="_blank" rel="noopener">View Repository</a></article>
-          <article class="project-card" data-tags="laravel frontend"><h3>WorkSphere</h3><p>Virtual workspace focused on productivity and collaboration.</p><div class="project-tech"><span>Laravel</span><span>Workspace</span></div><a class="project-link" href="https://github.com/lioubiarabi/WorkSphere_Virtual_Workspace" target="_blank" rel="noopener">View Repository</a></article>
-          <article class="project-card" data-tags="frontend"><h3>CosmicExplore</h3><p>Interactive cosmic exploration experience and visual storytelling.</p><div class="project-tech"><span>Frontend</span><span>UI</span></div><a class="project-link" href="https://github.com/lioubiarabi/CosmicExplore" target="_blank" rel="noopener">View Repository</a></article>
-          <article class="project-card" data-tags="laravel php"><h3>TaxiYa</h3><p>Grand taxi reservation platform with real-time booking workflow.</p><div class="project-tech"><span>Laravel</span><span>PHP</span></div><a class="project-link" href="https://github.com/lioubiarabi/TaxiYa-GrandTaxiReservationPlatform" target="_blank" rel="noopener">View Repository</a></article>
+            <div class="projects-grid" id="projects-grid">
+                <!-- Added from CV — was missing in original HTML -->
+                <article class="project-card" data-tags="laravel php">
+                    <h3>RightsKeeper</h3>
+                    <p>Secure web platform for music catalog management and digital notarization — archive lyrics, structure albums, and generate immutable IP certificates.</p>
+                    <div class="project-tech"><span>Laravel</span><span>PHP</span><span>MySQL</span><span>Tailwind</span></div>
+                    <a class="project-link" href="https://github.com/lioubiarabi" target="_blank" rel="noopener">View Repository</a>
+                </article>
+
+                <article class="project-card" data-tags="laravel php">
+                    <h3>EasyColoc</h3>
+                    <p>Roommate expense management with debt automation and admin features.</p>
+                    <div class="project-tech"><span>Laravel</span><span>PHP</span><span>MySQL</span></div>
+                    <a class="project-link" href="https://github.com/lioubiarabi/EasyColoc" target="_blank" rel="noopener">View Repository</a>
+                </article>
+
+                <article class="project-card" data-tags="php">
+                    <h3>BookBus</h3>
+                    <p>Bus booking management system with reservation and operation flow.</p>
+                    <div class="project-tech"><span>PHP</span><span>MVC</span></div>
+                    <a class="project-link" href="https://github.com/lioubiarabi/BookBus_Bus_Booking_Management_System" target="_blank" rel="noopener">View Repository</a>
+                </article>
+
+                <article class="project-card" data-tags="php">
+                    <h3>Loyalty Points System</h3>
+                    <p>MVC foundation project for points lifecycle and customer loyalty operations.</p>
+                    <div class="project-tech"><span>PHP</span><span>MVC</span></div>
+                    <a class="project-link" href="https://github.com/lioubiarabi/Loyalty_Points_System_MVC_Foundation" target="_blank" rel="noopener">View Repository</a>
+                </article>
+
+                <article class="project-card" data-tags="frontend php">
+                    <h3>PhotoSphere</h3>
+                    <p>Community photo gallery platform with collaborative visual sharing.</p>
+                    <div class="project-tech"><span>PHP</span><span>Frontend</span></div>
+                    <a class="project-link" href="https://github.com/lioubiarabi/PHOTOSPHERE_Galerie_Photo_Communautaire" target="_blank" rel="noopener">View Repository</a>
+                </article>
+
+                <article class="project-card" data-tags="php">
+                    <h3>BlogCMS PHP</h3>
+                    <p>Content management system implementation in PHP.</p>
+                    <div class="project-tech"><span>PHP</span><span>CMS</span></div>
+                    <a class="project-link" href="https://github.com/lioubiarabi/BlogCMS_php" target="_blank" rel="noopener">View Repository</a>
+                </article>
+
+                <article class="project-card" data-tags="php">
+                    <h3>BlogCMS SQL</h3>
+                    <p>SQL-centered edition of BlogCMS with schema-focused design.</p>
+                    <div class="project-tech"><span>SQL</span><span>Database</span></div>
+                    <a class="project-link" href="https://github.com/lioubiarabi/BlogCMS_sql" target="_blank" rel="noopener">View Repository</a>
+                </article>
+
+                <article class="project-card" data-tags="laravel php">
+                    <h3>SpaceOdyssey Reservations</h3>
+                    <p>Reservation management module for the SpaceOdyssey platform.</p>
+                    <div class="project-tech"><span>Laravel</span><span>PHP</span></div>
+                    <a class="project-link" href="https://github.com/lioubiarabi/SpaceOdyssey-reservations" target="_blank" rel="noopener">View Repository</a>
+                </article>
+
+                <article class="project-card" data-tags="laravel frontend">
+                    <h3>SpaceOdyssey</h3>
+                    <p>Main platform experience for space-themed exploration services.</p>
+                    <div class="project-tech"><span>Laravel</span><span>UI</span></div>
+                    <a class="project-link" href="https://github.com/lioubiarabi/SpaceOdyssey" target="_blank" rel="noopener">View Repository</a>
+                </article>
+
+                <article class="project-card" data-tags="frontend">
+                    <h3>SpaceOdyssey JavaScript</h3>
+                    <p>JavaScript-focused SpaceOdyssey implementation and interactions.</p>
+                    <div class="project-tech"><span>JavaScript</span><span>Frontend</span></div>
+                    <a class="project-link" href="https://github.com/lioubiarabi/SpaceOdyssey-javascript" target="_blank" rel="noopener">View Repository</a>
+                </article>
+
+                <article class="project-card" data-tags="frontend api">
+                    <h3>SpaceX Exploration</h3>
+                    <p>Exploration dashboard integrating space-themed data presentation.</p>
+                    <div class="project-tech"><span>API</span><span>JavaScript</span></div>
+                    <a class="project-link" href="https://github.com/lioubiarabi/spaceX_exploration" target="_blank" rel="noopener">View Repository</a>
+                </article>
+
+                <article class="project-card" data-tags="laravel php">
+                    <h3>GGManager</h3>
+                    <p>Management platform for organized workflows and project tracking.</p>
+                    <div class="project-tech"><span>Laravel</span><span>PHP</span></div>
+                    <a class="project-link" href="https://github.com/lioubiarabi/GGManager" target="_blank" rel="noopener">View Repository</a>
+                </article>
+
+                <article class="project-card" data-tags="api laravel">
+                    <h3>GourmetLibrary API</h3>
+                    <p>Backend API for culinary/library content services and integrations.</p>
+                    <div class="project-tech"><span>API</span><span>Laravel</span></div>
+                    <a class="project-link" href="https://github.com/lioubiarabi/GourmetLibrary_API" target="_blank" rel="noopener">View Repository</a>
+                </article>
+
+                <article class="project-card" data-tags="php">
+                    <h3>BlogCMS Console Edition</h3>
+                    <p>Console-based content management workflow implementation.</p>
+                    <div class="project-tech"><span>PHP</span><span>Console</span></div>
+                    <a class="project-link" href="https://github.com/lioubiarabi/BlogCMS_Console_Edition" target="_blank" rel="noopener">View Repository</a>
+                </article>
+
+                <article class="project-card" data-tags="laravel frontend">
+                    <h3>WorkSphere</h3>
+                    <p>Interactive web application for visually managing staff on a dynamic floor plan, with role and zone constraints.</p>
+                    <div class="project-tech"><span>Laravel</span><span>JavaScript</span><span>CSS</span></div>
+                    <a class="project-link" href="https://github.com/lioubiarabi/WorkSphere_Virtual_Workspace" target="_blank" rel="noopener">View Repository</a>
+                </article>
+
+                <article class="project-card" data-tags="frontend">
+                    <h3>CosmicExplore</h3>
+                    <p>Interactive cosmic exploration experience and visual storytelling.</p>
+                    <div class="project-tech"><span>Frontend</span><span>UI</span></div>
+                    <a class="project-link" href="https://github.com/lioubiarabi/CosmicExplore" target="_blank" rel="noopener">View Repository</a>
+                </article>
+
+                <article class="project-card" data-tags="laravel php">
+                    <h3>TaxiYa</h3>
+                    <p>Grand taxi reservation platform with real-time booking workflow.</p>
+                    <div class="project-tech"><span>Laravel</span><span>PHP</span></div>
+                    <a class="project-link" href="https://github.com/lioubiarabi/TaxiYa-GrandTaxiReservationPlatform" target="_blank" rel="noopener">View Repository</a>
+                </article>
+            </div>
         </div>
-      </div>
     </section>
 
     <section id="certificates" class="section" aria-labelledby="certificates-title">
-      <div class="container">
-        <div class="section-head-inline">
-          <div>
-            <p class="section-tag">CERTIFICATES</p>
-            <h2 id="certificates-title">Professional Learning & Credentials</h2>
-          </div>
-          <div class="project-filters" role="tablist" aria-label="Certificate filters">
-            <button class="filter-btn active" data-cert-filter="all">All</button>
-            <button class="filter-btn" data-cert-filter="scrimba">Scrimba</button>
-            <button class="filter-btn" data-cert-filter="google">Google</button>
-            <button class="filter-btn" data-cert-filter="michigan">Michigan</button>
-            <button class="filter-btn" data-cert-filter="other">Other</button>
-          </div>
-        </div>
+        <div class="container">
+            <div class="section-head-inline">
+                <div>
+                    <p class="section-tag">CERTIFICATES</p>
+                    <h2 id="certificates-title">Professional Learning &amp; Credentials</h2>
+                </div>
+                <div class="project-filters" role="tablist" aria-label="Certificate filters">
+                    <button class="filter-btn active" data-cert-filter="all">All</button>
+                    <button class="filter-btn" data-cert-filter="scrimba">Scrimba</button>
+                    <button class="filter-btn" data-cert-filter="google">Google</button>
+                    <button class="filter-btn" data-cert-filter="michigan">Michigan</button>
+                    <button class="filter-btn" data-cert-filter="other">Other</button>
+                </div>
+            </div>
 
-        <div class="cert-grid" id="certs-grid">
-          <article class="cert-card cert-featured" data-cert-issuer="scrimba"><div class="cert-badge"><i class="fas fa-star"></i> Specialization</div><div class="cert-logo scrimba">Scrimba</div><h3>Advanced JavaScript</h3><p>3-course specialization: Objects &amp; Loops, Async JS &amp; APIs, Collections &amp; Functions</p><div class="cert-meta"><span><i class="fas fa-calendar"></i> Aug 2025</span></div><a href="https://coursera.org/verify/specialization/N6ZF7VCNR7MY" target="_blank" rel="noopener" class="cert-verify">Verify <i class="fas fa-arrow-up-right-from-square"></i></a></article>
-          <article class="cert-card" data-cert-issuer="other"><div class="cert-logo codecademy">Codecademy</div><h3>Secure Coding Practices in C</h3><p>Memory safety, buffer overflow prevention, and secure C programming patterns.</p><div class="cert-meta"><span><i class="fas fa-calendar"></i> Jul 2025</span></div></article>
-          <article class="cert-card" data-cert-issuer="other"><div class="cert-logo jhu">Johns Hopkins</div><h3>HTML, CSS &amp; JavaScript for Web Developers</h3><p>Full frontend fundamentals course by Johns Hopkins University.</p><div class="cert-meta"><span><i class="fas fa-calendar"></i> Oct 2024</span></div><a href="https://coursera.org/verify/80T9MHPH5CM1" target="_blank" rel="noopener" class="cert-verify">Verify <i class="fas fa-arrow-up-right-from-square"></i></a></article>
-          <article class="cert-card" data-cert-issuer="google"><div class="cert-logo google">Google</div><h3>Foundations of Cybersecurity</h3><p>Network security fundamentals, cyberattack analysis, and security ethics.</p><div class="cert-meta"><span><i class="fas fa-calendar"></i> Oct 2024</span></div><a href="https://coursera.org/verify/AAUMGCTPEVXH" target="_blank" rel="noopener" class="cert-verify">Verify <i class="fas fa-arrow-up-right-from-square"></i></a></article>
-          <article class="cert-card" data-cert-issuer="google"><div class="cert-logo google">Google</div><h3>Introduction to Git and GitHub</h3><p>Version control, branching strategies, and collaborative workflows.</p><div class="cert-meta"><span><i class="fas fa-calendar"></i> Jul 2025</span></div><a href="https://coursera.org/verify/0WJ7QRKWVN74" target="_blank" rel="noopener" class="cert-verify">Verify <i class="fas fa-arrow-up-right-from-square"></i></a></article>
-          <article class="cert-card" data-cert-issuer="michigan"><div class="cert-logo michigan">U of Michigan</div><h3>Programming for Everybody (Python)</h3><p>Python fundamentals, variables, conditionals, and loops.</p><div class="cert-meta"><span><i class="fas fa-calendar"></i> Oct 2024</span></div><a href="https://coursera.org/verify/HMQCVSAJQACE" target="_blank" rel="noopener" class="cert-verify">Verify <i class="fas fa-arrow-up-right-from-square"></i></a></article>
-          <article class="cert-card" data-cert-issuer="michigan"><div class="cert-logo michigan">U of Michigan</div><h3>Python Data Structures</h3><p>Dictionaries, tuples, lists, sorting and advanced iteration.</p><div class="cert-meta"><span><i class="fas fa-calendar"></i> Nov 2024</span></div><a href="https://coursera.org/verify/DAITIFUY4U20" target="_blank" rel="noopener" class="cert-verify">Verify <i class="fas fa-arrow-up-right-from-square"></i></a></article>
-          <article class="cert-card" data-cert-issuer="michigan"><div class="cert-logo michigan">U of Michigan</div><h3>Using Python to Access Web Data</h3><p>HTTP requests, web scraping, APIs, and JSON/XML parsing.</p><div class="cert-meta"><span><i class="fas fa-calendar"></i> Nov 2024</span></div><a href="https://coursera.org/verify/46UTB2PUK4S7" target="_blank" rel="noopener" class="cert-verify">Verify <i class="fas fa-arrow-up-right-from-square"></i></a></article>
-          <article class="cert-card" data-cert-issuer="michigan"><div class="cert-logo michigan">U of Michigan</div><h3>Exploring C</h3><p>C programming fundamentals, memory management, and pointers.</p><div class="cert-meta"><span><i class="fas fa-calendar"></i> Jul 2025</span></div><a href="https://coursera.org/verify/YPOWVZQU0F1D" target="_blank" rel="noopener" class="cert-verify">Verify <i class="fas fa-arrow-up-right-from-square"></i></a></article>
-          <article class="cert-card" data-cert-issuer="scrimba"><div class="cert-logo scrimba">Scrimba</div><h3>Learn JavaScript</h3><p>JavaScript core: DOM, events, functions, arrays and objects.</p><div class="cert-meta"><span><i class="fas fa-calendar"></i> Aug 2025</span></div><a href="https://coursera.org/verify/VSKTSXILGCGK" target="_blank" rel="noopener" class="cert-verify">Verify <i class="fas fa-arrow-up-right-from-square"></i></a></article>
-          <article class="cert-card" data-cert-issuer="scrimba"><div class="cert-logo scrimba">Scrimba</div><h3>Learn TypeScript</h3><p>TypeScript types, interfaces, generics, and type-safe development.</p><div class="cert-meta"><span><i class="fas fa-calendar"></i> Aug 2025</span></div><a href="https://coursera.org/verify/D86SX6WAL0VK" target="_blank" rel="noopener" class="cert-verify">Verify <i class="fas fa-arrow-up-right-from-square"></i></a></article>
-          <article class="cert-card" data-cert-issuer="scrimba"><div class="cert-logo scrimba">Scrimba</div><h3>Learn HTML and CSS</h3><p>Semantic HTML, responsive layout, and CSS fundamentals.</p><div class="cert-meta"><span><i class="fas fa-calendar"></i> Aug 2025</span></div><a href="https://coursera.org/verify/22EMZBTWP1B8" target="_blank" rel="noopener" class="cert-verify">Verify <i class="fas fa-arrow-up-right-from-square"></i></a></article>
-          <article class="cert-card" data-cert-issuer="scrimba"><div class="cert-logo scrimba">Scrimba</div><h3>Learn CSS Flexbox</h3><p>Flex container, flex items, alignment and responsive patterns.</p><div class="cert-meta"><span><i class="fas fa-calendar"></i> Aug 2025</span></div><a href="https://coursera.org/verify/JNN63NOCOWFZ" target="_blank" rel="noopener" class="cert-verify">Verify <i class="fas fa-arrow-up-right-from-square"></i></a></article>
-          <article class="cert-card" data-cert-issuer="scrimba"><div class="cert-logo scrimba">Scrimba</div><h3>Learn CSS Grid</h3><p>CSS Grid layout, template areas, auto-fill and complex responsive grids.</p><div class="cert-meta"><span><i class="fas fa-calendar"></i> Nov 2025</span></div><a href="https://coursera.org/verify/OEY6OLEH38O1" target="_blank" rel="noopener" class="cert-verify">Verify <i class="fas fa-arrow-up-right-from-square"></i></a></article>
-          <article class="cert-card" data-cert-issuer="scrimba"><div class="cert-logo scrimba">Scrimba</div><h3>Learn CSS Variables</h3><p>Custom properties, theming with CSS variables and dynamic styling.</p><div class="cert-meta"><span><i class="fas fa-calendar"></i> Aug 2025</span></div><a href="https://coursera.org/verify/17I3385MJER1" target="_blank" rel="noopener" class="cert-verify">Verify <i class="fas fa-arrow-up-right-from-square"></i></a></article>
-          <article class="cert-card" data-cert-issuer="scrimba"><div class="cert-logo scrimba">Scrimba</div><h3>Command Line &amp; Terminal Basics</h3><p>Shell commands, navigation, file manipulation, and scripting basics.</p><div class="cert-meta"><span><i class="fas fa-calendar"></i> Aug 2025</span></div><a href="https://coursera.org/verify/OSBQSG9DBNSN" target="_blank" rel="noopener" class="cert-verify">Verify <i class="fas fa-arrow-up-right-from-square"></i></a></article>
-          <article class="cert-card" data-cert-issuer="scrimba"><div class="cert-logo scrimba">Scrimba</div><h3>Async JavaScript</h3><p>Promises, async/await, event loop, and asynchronous patterns.</p><div class="cert-meta"><span><i class="fas fa-calendar"></i> Aug 2025</span></div><a href="https://coursera.org/verify/GD0RECGMH11G" target="_blank" rel="noopener" class="cert-verify">Verify <i class="fas fa-arrow-up-right-from-square"></i></a></article>
-          <article class="cert-card" data-cert-issuer="scrimba"><div class="cert-logo scrimba">Scrimba</div><h3>Advanced JS 1: Objects, Loops, Hoisting</h3><p>Deep dive into JS objects, loop patterns, and hoisting behavior.</p><div class="cert-meta"><span><i class="fas fa-calendar"></i> Aug 2025</span></div><a href="https://coursera.org/verify/QHOM9SLRTWTR" target="_blank" rel="noopener" class="cert-verify">Verify <i class="fas fa-arrow-up-right-from-square"></i></a></article>
-          <article class="cert-card" data-cert-issuer="scrimba"><div class="cert-logo scrimba">Scrimba</div><h3>Advanced JS 2: Async, APIs, Operators</h3><p>Async patterns, API integration, spread/rest operators and destructuring.</p><div class="cert-meta"><span><i class="fas fa-calendar"></i> Aug 2025</span></div><a href="https://coursera.org/verify/TQ0REE8OXG83" target="_blank" rel="noopener" class="cert-verify">Verify <i class="fas fa-arrow-up-right-from-square"></i></a></article>
-          <article class="cert-card" data-cert-issuer="scrimba"><div class="cert-logo scrimba">Scrimba</div><h3>Advanced JS 3: Objects, Collections, Functions</h3><p>Custom objects with classes, inheritance, recursion, throttling &amp; generators.</p><div class="cert-meta"><span><i class="fas fa-calendar"></i> Aug 2025</span></div><a href="https://coursera.org/verify/4SG5AL4LPT67" target="_blank" rel="noopener" class="cert-verify">Verify <i class="fas fa-arrow-up-right-from-square"></i></a></article>
-          <article class="cert-card" data-cert-issuer="other"><div class="cert-logo meta">Meta</div><h3>React Basics</h3><p>React components, props, state, hooks, and event handling fundamentals.</p><div class="cert-meta"><span><i class="fas fa-calendar"></i> Aug 2024</span></div><a href="https://coursera.org/verify/VQ90D5SMH77T" target="_blank" rel="noopener" class="cert-verify">Verify <i class="fas fa-arrow-up-right-from-square"></i></a></article>
-          <article class="cert-card" data-cert-issuer="scrimba"><div class="cert-logo scrimba">Scrimba</div><h3>Learn Class Components in React</h3><p>React class components, lifecycle methods, and state management patterns.</p><div class="cert-meta"><span><i class="fas fa-calendar"></i> Sep 2025</span></div><a href="https://coursera.org/verify/VCIMOQDHU8ND" target="_blank" rel="noopener" class="cert-verify">Verify <i class="fas fa-arrow-up-right-from-square"></i></a></article>
-          <article class="cert-card" data-cert-issuer="scrimba"><div class="cert-logo scrimba">Scrimba</div><h3>Intro to SQL</h3><p>SQL queries, joins, filtering, aggregation, and database fundamentals.</p><div class="cert-meta"><span><i class="fas fa-calendar"></i> Apr 2026</span></div><a href="https://coursera.org/verify/BF02PF4EW0ON" target="_blank" rel="noopener" class="cert-verify">Verify <i class="fas fa-arrow-up-right-from-square"></i></a></article>
+            <div class="cert-grid" id="certs-grid">
+                <article class="cert-card cert-featured" data-cert-issuer="scrimba">
+                    <div class="cert-badge"><i class="fas fa-star"></i> Specialization</div>
+                    <div class="cert-logo scrimba">Scrimba</div>
+                    <h3>Advanced JavaScript</h3>
+                    <p>3-course specialization: Objects &amp; Loops, Async JS &amp; APIs, Collections &amp; Functions</p>
+                    <div class="cert-meta"><span><i class="fas fa-calendar"></i> Aug 2025</span></div>
+                    <a href="https://coursera.org/verify/specialization/N6ZF7VCNR7MY" target="_blank" rel="noopener" class="cert-verify">Verify <i class="fas fa-arrow-up-right-from-square"></i></a>
+                </article>
+
+                <article class="cert-card" data-cert-issuer="other">
+                    <div class="cert-logo codecademy">Codecademy</div>
+                    <h3>Secure Coding Practices in C</h3>
+                    <p>Memory safety, buffer overflow prevention, and secure C programming patterns.</p>
+                    <div class="cert-meta"><span><i class="fas fa-calendar"></i> Jul 2025</span></div>
+                </article>
+
+                <article class="cert-card" data-cert-issuer="other">
+                    <div class="cert-logo jhu">Johns Hopkins</div>
+                    <h3>HTML, CSS &amp; JavaScript for Web Developers</h3>
+                    <p>Full frontend fundamentals course by Johns Hopkins University.</p>
+                    <div class="cert-meta"><span><i class="fas fa-calendar"></i> Oct 2024</span></div>
+                    <a href="https://coursera.org/verify/80T9MHPH5CM1" target="_blank" rel="noopener" class="cert-verify">Verify <i class="fas fa-arrow-up-right-from-square"></i></a>
+                </article>
+
+                <article class="cert-card" data-cert-issuer="google">
+                    <div class="cert-logo google">Google</div>
+                    <h3>Foundations of Cybersecurity</h3>
+                    <p>Network security fundamentals, cyberattack analysis, and security ethics.</p>
+                    <div class="cert-meta"><span><i class="fas fa-calendar"></i> Oct 2024</span></div>
+                    <a href="https://coursera.org/verify/AAUMGCTPEVXH" target="_blank" rel="noopener" class="cert-verify">Verify <i class="fas fa-arrow-up-right-from-square"></i></a>
+                </article>
+
+                <article class="cert-card" data-cert-issuer="google">
+                    <div class="cert-logo google">Google</div>
+                    <h3>Introduction to Git and GitHub</h3>
+                    <p>Version control, branching strategies, and collaborative workflows.</p>
+                    <div class="cert-meta"><span><i class="fas fa-calendar"></i> Jul 2025</span></div>
+                    <a href="https://coursera.org/verify/0WJ7QRKWVN74" target="_blank" rel="noopener" class="cert-verify">Verify <i class="fas fa-arrow-up-right-from-square"></i></a>
+                </article>
+
+                <article class="cert-card" data-cert-issuer="michigan">
+                    <div class="cert-logo michigan">U of Michigan</div>
+                    <h3>Programming for Everybody (Python)</h3>
+                    <p>Python fundamentals, variables, conditionals, and loops.</p>
+                    <div class="cert-meta"><span><i class="fas fa-calendar"></i> Oct 2024</span></div>
+                    <a href="https://coursera.org/verify/HMQCVSAJQACE" target="_blank" rel="noopener" class="cert-verify">Verify <i class="fas fa-arrow-up-right-from-square"></i></a>
+                </article>
+
+                <article class="cert-card" data-cert-issuer="michigan">
+                    <div class="cert-logo michigan">U of Michigan</div>
+                    <h3>Python Data Structures</h3>
+                    <p>Dictionaries, tuples, lists, sorting and advanced iteration.</p>
+                    <div class="cert-meta"><span><i class="fas fa-calendar"></i> Nov 2024</span></div>
+                    <a href="https://coursera.org/verify/DAITIFUY4U20" target="_blank" rel="noopener" class="cert-verify">Verify <i class="fas fa-arrow-up-right-from-square"></i></a>
+                </article>
+
+                <article class="cert-card" data-cert-issuer="michigan">
+                    <div class="cert-logo michigan">U of Michigan</div>
+                    <h3>Using Python to Access Web Data</h3>
+                    <p>HTTP requests, web scraping, APIs, and JSON/XML parsing.</p>
+                    <div class="cert-meta"><span><i class="fas fa-calendar"></i> Nov 2024</span></div>
+                    <a href="https://coursera.org/verify/46UTB2PUK4S7" target="_blank" rel="noopener" class="cert-verify">Verify <i class="fas fa-arrow-up-right-from-square"></i></a>
+                </article>
+
+                <article class="cert-card" data-cert-issuer="michigan">
+                    <div class="cert-logo michigan">U of Michigan</div>
+                    <h3>Exploring C</h3>
+                    <p>C programming fundamentals, memory management, and pointers.</p>
+                    <div class="cert-meta"><span><i class="fas fa-calendar"></i> Jul 2025</span></div>
+                    <a href="https://coursera.org/verify/YPOWVZQU0F1D" target="_blank" rel="noopener" class="cert-verify">Verify <i class="fas fa-arrow-up-right-from-square"></i></a>
+                </article>
+
+                <article class="cert-card" data-cert-issuer="scrimba">
+                    <div class="cert-logo scrimba">Scrimba</div>
+                    <h3>Learn JavaScript</h3>
+                    <p>JavaScript core: DOM, events, functions, arrays and objects.</p>
+                    <div class="cert-meta"><span><i class="fas fa-calendar"></i> Aug 2025</span></div>
+                    <a href="https://coursera.org/verify/VSKTSXILGCGK" target="_blank" rel="noopener" class="cert-verify">Verify <i class="fas fa-arrow-up-right-from-square"></i></a>
+                </article>
+
+                <article class="cert-card" data-cert-issuer="scrimba">
+                    <div class="cert-logo scrimba">Scrimba</div>
+                    <h3>Learn TypeScript</h3>
+                    <p>TypeScript types, interfaces, generics, and type-safe development.</p>
+                    <div class="cert-meta"><span><i class="fas fa-calendar"></i> Aug 2025</span></div>
+                    <a href="https://coursera.org/verify/D86SX6WAL0VK" target="_blank" rel="noopener" class="cert-verify">Verify <i class="fas fa-arrow-up-right-from-square"></i></a>
+                </article>
+
+                <article class="cert-card" data-cert-issuer="scrimba">
+                    <div class="cert-logo scrimba">Scrimba</div>
+                    <h3>Learn HTML and CSS</h3>
+                    <p>Semantic HTML, responsive layout, and CSS fundamentals.</p>
+                    <div class="cert-meta"><span><i class="fas fa-calendar"></i> Aug 2025</span></div>
+                    <a href="https://coursera.org/verify/22EMZBTWP1B8" target="_blank" rel="noopener" class="cert-verify">Verify <i class="fas fa-arrow-up-right-from-square"></i></a>
+                </article>
+
+                <article class="cert-card" data-cert-issuer="scrimba">
+                    <div class="cert-logo scrimba">Scrimba</div>
+                    <h3>Learn CSS Flexbox</h3>
+                    <p>Flex container, flex items, alignment and responsive patterns.</p>
+                    <div class="cert-meta"><span><i class="fas fa-calendar"></i> Aug 2025</span></div>
+                    <a href="https://coursera.org/verify/JNN63NOCOWFZ" target="_blank" rel="noopener" class="cert-verify">Verify <i class="fas fa-arrow-up-right-from-square"></i></a>
+                </article>
+
+                <article class="cert-card" data-cert-issuer="scrimba">
+                    <div class="cert-logo scrimba">Scrimba</div>
+                    <h3>Learn CSS Grid</h3>
+                    <p>CSS Grid layout, template areas, auto-fill and complex responsive grids.</p>
+                    <div class="cert-meta"><span><i class="fas fa-calendar"></i> Nov 2025</span></div>
+                    <a href="https://coursera.org/verify/OEY6OLEH38O1" target="_blank" rel="noopener" class="cert-verify">Verify <i class="fas fa-arrow-up-right-from-square"></i></a>
+                </article>
+
+                <article class="cert-card" data-cert-issuer="scrimba">
+                    <div class="cert-logo scrimba">Scrimba</div>
+                    <h3>Learn CSS Variables</h3>
+                    <p>Custom properties, theming with CSS variables and dynamic styling.</p>
+                    <div class="cert-meta"><span><i class="fas fa-calendar"></i> Aug 2025</span></div>
+                    <a href="https://coursera.org/verify/17I3385MJER1" target="_blank" rel="noopener" class="cert-verify">Verify <i class="fas fa-arrow-up-right-from-square"></i></a>
+                </article>
+
+                <article class="cert-card" data-cert-issuer="scrimba">
+                    <div class="cert-logo scrimba">Scrimba</div>
+                    <h3>Command Line &amp; Terminal Basics</h3>
+                    <p>Shell commands, navigation, file manipulation, and scripting basics.</p>
+                    <div class="cert-meta"><span><i class="fas fa-calendar"></i> Aug 2025</span></div>
+                    <a href="https://coursera.org/verify/OSBQSG9DBNSN" target="_blank" rel="noopener" class="cert-verify">Verify <i class="fas fa-arrow-up-right-from-square"></i></a>
+                </article>
+
+                <article class="cert-card" data-cert-issuer="scrimba">
+                    <div class="cert-logo scrimba">Scrimba</div>
+                    <h3>Async JavaScript</h3>
+                    <p>Promises, async/await, event loop, and asynchronous patterns.</p>
+                    <div class="cert-meta"><span><i class="fas fa-calendar"></i> Aug 2025</span></div>
+                    <a href="https://coursera.org/verify/GD0RECGMH11G" target="_blank" rel="noopener" class="cert-verify">Verify <i class="fas fa-arrow-up-right-from-square"></i></a>
+                </article>
+
+                <article class="cert-card" data-cert-issuer="scrimba">
+                    <div class="cert-logo scrimba">Scrimba</div>
+                    <h3>Advanced JS 1: Objects, Loops, Hoisting</h3>
+                    <p>Deep dive into JS objects, loop patterns, and hoisting behavior.</p>
+                    <div class="cert-meta"><span><i class="fas fa-calendar"></i> Aug 2025</span></div>
+                    <a href="https://coursera.org/verify/QHOM9SLRTWTR" target="_blank" rel="noopener" class="cert-verify">Verify <i class="fas fa-arrow-up-right-from-square"></i></a>
+                </article>
+
+                <article class="cert-card" data-cert-issuer="scrimba">
+                    <div class="cert-logo scrimba">Scrimba</div>
+                    <h3>Advanced JS 2: Async, APIs, Operators</h3>
+                    <p>Async patterns, API integration, spread/rest operators and destructuring.</p>
+                    <div class="cert-meta"><span><i class="fas fa-calendar"></i> Aug 2025</span></div>
+                    <a href="https://coursera.org/verify/TQ0REE8OXG83" target="_blank" rel="noopener" class="cert-verify">Verify <i class="fas fa-arrow-up-right-from-square"></i></a>
+                </article>
+
+                <article class="cert-card" data-cert-issuer="scrimba">
+                    <div class="cert-logo scrimba">Scrimba</div>
+                    <h3>Advanced JS 3: Objects, Collections, Functions</h3>
+                    <p>Custom objects with classes, inheritance, recursion, throttling &amp; generators.</p>
+                    <div class="cert-meta"><span><i class="fas fa-calendar"></i> Aug 2025</span></div>
+                    <a href="https://coursera.org/verify/4SG5AL4LPT67" target="_blank" rel="noopener" class="cert-verify">Verify <i class="fas fa-arrow-up-right-from-square"></i></a>
+                </article>
+
+                <article class="cert-card" data-cert-issuer="other">
+                    <div class="cert-logo meta">Meta</div>
+                    <h3>React Basics</h3>
+                    <p>React components, props, state, hooks, and event handling fundamentals.</p>
+                    <div class="cert-meta"><span><i class="fas fa-calendar"></i> Aug 2024</span></div>
+                    <a href="https://coursera.org/verify/VQ90D5SMH77T" target="_blank" rel="noopener" class="cert-verify">Verify <i class="fas fa-arrow-up-right-from-square"></i></a>
+                </article>
+
+                <article class="cert-card" data-cert-issuer="scrimba">
+                    <div class="cert-logo scrimba">Scrimba</div>
+                    <h3>Learn Class Components in React</h3>
+                    <p>React class components, lifecycle methods, and state management patterns.</p>
+                    <div class="cert-meta"><span><i class="fas fa-calendar"></i> Sep 2025</span></div>
+                    <a href="https://coursera.org/verify/VCIMOQDHU8ND" target="_blank" rel="noopener" class="cert-verify">Verify <i class="fas fa-arrow-up-right-from-square"></i></a>
+                </article>
+
+                <article class="cert-card" data-cert-issuer="scrimba">
+                    <div class="cert-logo scrimba">Scrimba</div>
+                    <h3>Intro to SQL</h3>
+                    <p>SQL queries, joins, filtering, aggregation, and database fundamentals.</p>
+                    <div class="cert-meta"><span><i class="fas fa-calendar"></i> Apr 2026</span></div>
+                    <a href="https://coursera.org/verify/BF02PF4EW0ON" target="_blank" rel="noopener" class="cert-verify">Verify <i class="fas fa-arrow-up-right-from-square"></i></a>
+                </article>
+            </div>
         </div>
-      </div>
     </section>
 
     <section id="contact" class="section section-alt" aria-labelledby="contact-title">
-      <div class="container contact-wrap">
-        <div>
-          <p class="section-tag">CONTACT</p>
-          <h2 id="contact-title">Let's build something impactful.</h2>
-          <p>I am open to full-time opportunities and freelance collaborations. If your team needs a developer who values quality and communication, let's connect.</p>
+        <div class="container contact-wrap">
+            <div>
+                <p class="section-tag">CONTACT</p>
+                <h2 id="contact-title">Let's build something impactful.</h2>
+                <p>I am open to full-time opportunities and freelance collaborations. If your team needs a developer who values quality and communication, let's connect.</p>
+            </div>
+            <div class="contact-actions">
+                <a class="btn btn-primary" href="mailto:arabi@loubi.me">Send Email</a>
+                <a class="btn btn-ghost" href="./Loubi-Arabi-CV.pdf" target="_blank" rel="noopener">Download CV</a>
+            </div>
         </div>
-        <div class="contact-actions">
-          <a class="btn btn-primary" href="mailto:arabi@loubi.me">Send Email</a>
-          <a class="btn btn-ghost" href="./Loubi-Arabi-CV.pdf" target="_blank" rel="noopener">Download CV</a>
-        </div>
-      </div>
     </section>
-  </main>
+</main>
 
-  <footer class="site-footer">
+<footer class="site-footer">
     <div class="container">
-      <p>© 2026 Loubi Arabi. Crafted with focus and clarity.</p>
+        <p>© 2026 Loubi Arabi. Crafted with focus and clarity.</p>
     </div>
-  </footer>
+</footer>
 
-  <script src="js/main.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
